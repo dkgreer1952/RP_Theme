@@ -16,35 +16,41 @@
 
 </head>
 <body>
+    @*************** Theme ***************@
+    @* This code needs to be here in order to pre-set the Bootstrap theme before the rest of the page is loaded *@
     <script>
         function getTheme() {
+            // get the theme from browser storage...
             let theme = localStorage.getItem('Theme');
             if (theme == null) {
+                //No theme found.  Fetch it from the Windows mode instead
                 theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
             }
 
             return theme;
         };
 
+        // Set the Bootstrap color mode
         document.documentElement.setAttribute('data-bs-theme', getTheme());
+
     </script>
+    @*************** Theme ***************@
     <header>
         <nav class="navbar navbar-expand-md py-2 navbar-toggleable-md fixed-top bg-primary d-print-none" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">RP_Theme</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-md-inline-flex flex-md-row-reverse">
+                    @*************** Theme ***************@
                     <partial name="_LightDarkPartial" />
-                    <div class="vr d-none d-md-block"></div>
+                    @*************** Theme ***************@
+                    <div class="vr d-none d-md-block"></div> @* Vertical separator *@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Page1" target="_blank">New Tab</a>
                         </li>
                     </ul>
                 </div>
@@ -56,12 +62,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - RP_Theme - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
