@@ -1,0 +1,51 @@
+@import "../lib/bootstrap/scss/_functions.scss";
+@import "../lib/bootstrap/scss/_variables.scss";
+
+html {
+    font-size: 12px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+        position: relative;
+        min-height: 100%;
+    }
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    --bs-body-font-family: Verdana, var(--bs-font-sans-serif);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Override default Bootstrap dropdown menu colors for non-dark themes */
+
+[data-bs-theme]:not([data-bs-theme=dark]) .dropdown-menu {
+    background-color: var(--bs-primary);
+}
+
+[data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item {
+    color: var(--bs-light);
+    background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1));
+}
+
+    [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item:hover, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item:hover {
+        color: var(--bs-primary);
+        background-color: RGBA(var(--bs-light-rgb), var(--bs-bg-opacity, 1));
+    }
