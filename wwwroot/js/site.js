@@ -2,7 +2,7 @@
 
 /* Set the Bootstrap theme attribute */
 function setTheme(theme) {
-    if (theme == 'light' || theme == 'dark') {
+    if (theme == 'light' || theme == 'dark' || theme == 'spacelab' || theme == 'pulse') {
         document.documentElement.setAttribute('data-bs-theme', theme);
     }
 };
@@ -10,7 +10,7 @@ function setTheme(theme) {
 /* Persist the theme to browser storage, or remove it to default to the Windows mode */
 function saveTheme(theme) {
 
-    if (theme == 'light' || theme == 'dark') {
+    if (theme == 'light' || theme == 'dark' || theme == 'spacelab' || theme == 'pulse') {
         localStorage.setItem('Theme', theme);
     }
     else if (theme == 'system') {

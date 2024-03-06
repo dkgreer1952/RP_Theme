@@ -31,18 +31,18 @@ body {
   margin-bottom: 60px;
 }
 
-/* Override default Bootstrap dropdown menu colors for light theme */
+/* Override default Bootstrap dropdown menu colors for non-dark themes */
 
-[data-bs-theme=light] .dropdown-menu {
+[data-bs-theme]:not([data-bs-theme=dark]) .dropdown-menu {
     background-color: var(--bs-primary);
 }
 
-[data-bs-theme=light] .dropdown-item, [data-bs-theme=light] button.dropdown-item {
+[data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item {
     color: var(--bs-light);
     background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1));
 }
 
-    [data-bs-theme=light] .dropdown-item:hover, [data-bs-theme=light] button.dropdown-item:hover {
+    [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item:hover, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item:hover {
         color: var(--bs-primary);
         background-color: RGBA(var(--bs-light-rgb), var(--bs-bg-opacity, 1));
     }
