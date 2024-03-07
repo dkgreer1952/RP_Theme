@@ -2,19 +2,26 @@
 
 /* Set the Bootstrap theme attribute */
 function setTheme(theme) {
-    if (theme == 'light' || theme == 'dark' || theme == 'spacelab' || theme == 'pulse') {
-        document.documentElement.setAttribute('data-bs-theme', theme);
+    switch (theme) {
+        case 'light':
+        case 'dark':
+        case 'spacelab':
+        case 'pulse':
+        case 'minty': document.documentElement.setAttribute('data-bs-theme', theme); break;
+        default:
     }
 };
 
 /* Persist the theme to browser storage, or remove it to default to the Windows mode */
 function saveTheme(theme) {
-
-    if (theme == 'light' || theme == 'dark' || theme == 'spacelab' || theme == 'pulse') {
-        localStorage.setItem('Theme', theme);
-    }
-    else if (theme == 'system') {
-        localStorage.removeItem('Theme');
+    switch (theme) {
+        case 'light':
+        case 'dark':
+        case 'spacelab':
+        case 'pulse':
+        case 'minty': localStorage.setItem('Theme', theme); break;
+        case 'system': localStorage.removeItem('Theme'); break;
+        default:
     }
 
     setTheme(getTheme());
