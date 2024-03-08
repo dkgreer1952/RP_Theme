@@ -392,12 +392,9 @@ body {
   --bs-body-font-family: Verdana, var(--bs-font-sans-serif);
 }
 
-.btn {
-  background-color: var(--btn-theme);
-}
-
-.btn:hover {
-  background-color: var(--btn-hover-theme);
+.btn-primary {
+  --bs-btn-bg: var(--btn-theme);
+  --bs-btn-hover-bg: var(--btn-hover-theme);
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
