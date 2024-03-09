@@ -1,4 +1,5 @@
 ﻿@page
+@model RP_Theme.Pages.Page1Model
 @{
     string title = "Test Page 1";
     ViewData["Title"] = title;
@@ -6,4 +7,19 @@
 <div>
     <h1>@title</h1>
     <p>Changing the theme on this page will also change it on the Home page</p>
+    <div>Sample form items</div>
+    <div class="row col-auto w-50">
+        <div class="col">
+            <button class="btn btn-primary">Test</button>
+        </div>
+        <div class="col">
+            <input class="form-control form-control-sm rounded" style="width: 15em;" />
+        </div>
+        <div class="col">
+            <input type="checkbox" class="form-check-input" />
+        </div>
+        <div class="col">
+            <select asp-items="Html.GetEnumSelectList<HaveReadType>()" class="form-select form-select-sm d-inline" aria-label="Have" style="width:5.5em;"></select>
+        </div>
+    </div>
 </div>

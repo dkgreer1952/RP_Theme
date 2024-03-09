@@ -5,6 +5,13 @@
     --btn-theme: var(--bs-primary);
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(216, 98%, calc(52% - 15%));
+    --bs-border-color: var(--btn-hover-theme);
+}
+
+[data-bs-theme=dark] {
+    --btn-theme: var(--bs-primary);
+    --bg-theme: var(--bs-body-bg);
+    --btn-hover-theme: hsl(216, 98%, calc(52% - 15%));
 }
 
 [data-bs-theme=spacelab] {
@@ -128,6 +135,7 @@
     --btn-theme: var(--bs-primary);
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(211, 39%, calc(44% - 15%));
+    --bs-border-color: var(--btn-hover-theme);
 }
 
 [data-bs-theme=pulse] {
@@ -251,6 +259,7 @@
     --btn-theme: var(--bs-primary);
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(264, 51%, calc(39% - 15%));
+    --bs-border-color: var(--btn-hover-theme);
 }
 
 [data-bs-theme=minty] {
@@ -374,6 +383,7 @@
     --btn-theme: var(--bs-primary);
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(163, 38%, calc(62% - 15%));
+    --bs-border-color: var(--btn-hover-theme);
 }
 
 html {
@@ -401,10 +411,18 @@ body {
     --bs-btn-hover-bg: var(--btn-hover-theme);
     --bs-btn-border-color: var(--btn-hover-theme);
     --bs-btn-active-bg: var(--btn-theme);
+    --bs-btn-active-border-color: var(--btn-hover-theme);
+    --bs-btn-hover-border-color: var(--btn-hover-theme);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--btn-theme);
+.form-check-input:checked {
+    background-color: var(--btn-theme);
+    border-color: var(--btn-hover-theme);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus, .form-select:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.1rem var(--bg-theme), 0 0 0 0.25rem var(--btn-theme);
 }
 
 html {
@@ -414,11 +432,9 @@ html {
 
 body {
     margin-bottom: 60px;
-}
-
-[data-bs-theme]:not([data-bs-theme=dark]) body {
     background: var(--bg-theme);
 }
+
 /* Override default Bootstrap dropdown menu colors for non-dark themes */
 
 [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-menu {
@@ -427,10 +443,10 @@ body {
 
 [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item {
     color: var(--bs-light);
-    background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1));
+    background-color: var(--bs-primary);
 }
 
 [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item:hover, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item:hover {
     color: var(--bs-primary);
-    background-color: RGBA(var(--bs-light-rgb), var(--bs-bg-opacity, 1));
+    background-color: var(--bs-light);
 }
