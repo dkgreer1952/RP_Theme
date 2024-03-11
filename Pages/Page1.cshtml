@@ -1,5 +1,4 @@
 ﻿@page
-@model RP_Theme.Pages.Page1Model
 @{
     string title = "Test Page 1";
     ViewData["Title"] = title;
@@ -16,10 +15,19 @@
             <input class="form-control form-control-sm rounded" style="width: 15em;" />
         </div>
         <div class="col">
-            <input type="checkbox" class="form-check-input" />
+            <input type="checkbox" class="form-check form-check-input" />
         </div>
         <div class="col">
-            <select asp-items="Html.GetEnumSelectList<HaveReadType>()" class="form-select form-select-sm d-inline" aria-label="Have" style="width:5.5em;"></select>
+            <div class="form-check form-switch checkbox-lg">
+                <input type="checkbox" class="form-check-input" />
+            </div>
+        </div>
+        <div class="col">
+            <select class="form-select form-select-sm d-inline" style="width:5.5em;">
+                <option>Any</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
         </div>
     </div>
 </div>

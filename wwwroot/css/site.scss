@@ -136,6 +136,18 @@
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(211, 39%, calc(44% - 15%));
     --bs-border-color: var(--btn-hover-theme);
+
+    .form-switch .form-check-input {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:focus {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23a2b7cd'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:checked {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    }
 }
 
 [data-bs-theme=pulse] {
@@ -260,6 +272,18 @@
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(264, 51%, calc(39% - 15%));
     --bs-border-color: var(--btn-hover-theme);
+
+    .form-switch .form-check-input {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:focus {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23593196'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:checked {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    }
 }
 
 [data-bs-theme=minty] {
@@ -384,6 +408,18 @@
     --bg-theme: var(--bs-primary-bg-subtle);
     --btn-hover-theme: hsl(163, 38%, calc(62% - 15%));
     --bs-border-color: var(--btn-hover-theme);
+
+    .form-switch .form-check-input {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:focus {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23bce1d6'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:checked {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    }
 }
 
 html {
@@ -425,6 +461,16 @@ body {
     box-shadow: 0 0 0 0.1rem var(--bg-theme), 0 0 0 0.25rem var(--btn-theme);
 }
 
+.checkbox-lg {
+    margin-top: 5px;
+}
+
+.checkbox-lg .form-check-input {
+    transform: scale(1.4);
+    margin-right: 0.7rem;
+}
+
+
 html {
     position: relative;
     min-height: 100%;
@@ -434,7 +480,6 @@ body {
     margin-bottom: 60px;
     background: var(--bg-theme);
 }
-
 /* Override default Bootstrap dropdown menu colors for non-dark themes */
 
 [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-menu {
