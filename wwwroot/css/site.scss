@@ -77,7 +77,7 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #777;
     --bs-body-color-rgb: 119, 119, 119;
-    --bs-body-bg: var(--bs-primary-bg-subtle);
+    --bs-body-bg: #fff;
     --bs-body-bg-rgb: 218, 226, 235;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0, 0, 0;
@@ -121,24 +121,14 @@
     --bs-form-invalid-color: #cd0200;
     --bs-form-invalid-border-color: #cd0200;
 
-    .form-control {
-        background-color: white;
-    }
-
     .form-control:focus {
-        color: var(--bs-body-color);
-        background-color: white;
         border-color: #a2b7cd;
-        box-shadow: 0 0 0 0.25rem rgba(68, 110, 155, 0.25);
-    }
-
-    .form-check-input {
-        --bs-form-check-bg: white;
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:focus {
         border-color: #a2b7cd;
-        box-shadow: 0 0 0 0.25rem rgba(68, 110, 155, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:checked {
@@ -159,13 +149,9 @@
         --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
     }
 
-    .form-select {
-        background-color: white;
-    }
-
     .form-select:focus {
         border-color: #a2b7cd;
-        box-shadow: 0 0 0 0.25rem rgba(68, 110, 155, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .btn-primary {
@@ -261,7 +247,7 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #444;
     --bs-body-color-rgb: 68, 68, 68;
-    --bs-body-bg: var(--bs-primary-bg-subtle);
+    --bs-body-bg: #fff;
     --bs-body-bg-rgb: 222, 214, 234;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0, 0, 0;
@@ -305,23 +291,14 @@
     --bs-form-invalid-color: #fc3939;
     --bs-form-invalid-border-color: #fc3939;
 
-    .form-control {
-        background-color: white;
-    }
-
     .form-control:focus {
-        background-color: white;
         border-color: #593196;
-        box-shadow: 0 0 0 0.25rem rgba(89, 49, 150, 0.25);
-    }
-
-    .form-check-input {
-        --bs-form-check-bg: white;
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:focus {
         border-color: #593196;
-        box-shadow: 0 0 0 0.25rem rgba(89, 49, 150, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:checked {
@@ -342,13 +319,9 @@
         --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
     }
 
-    .form-select {
-        background-color: white;
-    }
-
     .form-select:focus {
         border-color: #593196;
-        box-shadow: 0 0 0 0.25rem rgba(89, 49, 150, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .btn-primary {
@@ -444,7 +417,7 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #888;
     --bs-body-color-rgb: 136, 136, 136;
-    --bs-body-bg: var(--bs-primary-bg-subtle);
+    --bs-body-bg: #fff;
     --bs-body-bg-rgb: 228, 243, 239;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0, 0, 0;
@@ -488,23 +461,14 @@
     --bs-form-invalid-color: #ff7851;
     --bs-form-invalid-border-color: #ff7851;
 
-    .form-control {
-        background-color: white;
-    }
-
     .form-control:focus {
-        background-color: white;
         border-color: #bce1d6;
-        box-shadow: 0 0 0 0.25rem rgba(120, 194, 173, 0.25);
-    }
-
-    .form-check-input {
-        --bs-form-check-bg: white;
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:focus {
         border-color: #bce1d6;
-        box-shadow: 0 0 0 0.25rem rgba(120, 194, 173, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .form-check-input:checked {
@@ -524,13 +488,9 @@
         --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
     }
 
-    .form-select {
-        background-color: white;
-    }
-
     .form-select:focus {
         border-color: #bce1d6;
-        box-shadow: 0 0 0 0.25rem rgba(120, 194, 173, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
     }
 
     .btn-primary {
@@ -571,6 +531,11 @@ body {
     padding-top: 60px;
     padding-bottom: 20px;
     margin-bottom: 60px;
+}
+
+/* Set body background for non-dark themes */
+[data-bs-theme]:not([data-bs-theme=dark]) body {
+    background-color: var(--bs-primary-bg-subtle);
 }
 
 .checkbox-lg {
