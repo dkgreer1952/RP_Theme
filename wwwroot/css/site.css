@@ -118,17 +118,16 @@
   --bs-form-invalid-color: #cd0200;
   --bs-form-invalid-border-color: #cd0200;
 }
-[data-bs-theme=spacelab] .form-control:focus {
+[data-bs-theme=spacelab] .form-control, [data-bs-theme=spacelab] .form-control:focus,
+[data-bs-theme=spacelab] .form-check-input, [data-bs-theme=spacelab] .form-check-input:focus, [data-bs-theme=spacelab] .form-check-input:checked,
+[data-bs-theme=spacelab] .form-select, [data-bs-theme=spacelab] .form-select:focus {
   border-color: #a2b7cd;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
-}
-[data-bs-theme=spacelab] .form-check-input:focus {
-  border-color: #a2b7cd;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=spacelab] .form-check-input:checked {
-  background-color: #446e9b;
-  border-color: #446e9b;
+  background-color: var(--bs-primary);
+}
+[data-bs-theme=spacelab] .form-control:focus, [data-bs-theme=spacelab] .form-check-input:focus, [data-bs-theme=spacelab] .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=spacelab] .form-switch .form-check-input {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
@@ -138,10 +137,6 @@
 }
 [data-bs-theme=spacelab] .form-switch .form-check-input:checked {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-[data-bs-theme=spacelab] .form-select:focus {
-  border-color: #a2b7cd;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=spacelab] .btn-primary {
   --bs-btn-color: #fff;
@@ -279,17 +274,16 @@
   --bs-form-invalid-color: #fc3939;
   --bs-form-invalid-border-color: #fc3939;
 }
-[data-bs-theme=pulse] .form-control:focus {
+[data-bs-theme=pulse] .form-control, [data-bs-theme=pulse] .form-control:focus,
+[data-bs-theme=pulse] .form-check-input, [data-bs-theme=pulse] .form-check-input:focus, [data-bs-theme=pulse] .form-check-input:checked,
+[data-bs-theme=pulse] .form-select, [data-bs-theme=pulse] .form-select:focus {
   border-color: #593196;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
-[data-bs-theme=pulse] .form-check-input:focus {
-  border-color: #593196;
+[data-bs-theme=pulse] .form-control:focus, [data-bs-theme=pulse] .form-check-input:focus, [data-bs-theme=pulse] .form-select:focus {
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=pulse] .form-check-input:checked {
-  background-color: #593196;
-  border-color: #593196;
+  background-color: var(--bs-primary);
 }
 [data-bs-theme=pulse] .form-switch .form-check-input {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
@@ -300,10 +294,6 @@
 }
 [data-bs-theme=pulse] .form-switch .form-check-input:checked {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-[data-bs-theme=pulse] .form-select:focus {
-  border-color: #593196;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=pulse] .btn-primary {
   --bs-btn-color: #fff;
@@ -441,17 +431,16 @@
   --bs-form-invalid-color: #ff7851;
   --bs-form-invalid-border-color: #ff7851;
 }
-[data-bs-theme=minty] .form-control:focus {
+[data-bs-theme=minty] .form-control, [data-bs-theme=minty] .form-control:focus,
+[data-bs-theme=minty] .form-check-input, [data-bs-theme=minty] .form-check-input:focus, [data-bs-theme=minty] .form-check-input:checked,
+[data-bs-theme=minty] .form-select, [data-bs-theme=minty] .form-select:focus {
   border-color: #bce1d6;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
-[data-bs-theme=minty] .form-check-input:focus {
-  border-color: #bce1d6;
+[data-bs-theme=minty] .form-control:focus, [data-bs-theme=minty] .form-check-input:focus, [data-bs-theme=minty] .form-select:focus {
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=minty] .form-check-input:checked {
-  background-color: #78c2ad;
-  border-color: #bce1d6;
+  background-color: var(--bs-primary);
 }
 [data-bs-theme=minty] .form-switch .form-check-input {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
@@ -461,10 +450,6 @@
 }
 [data-bs-theme=minty] .form-switch .form-check-input:checked {
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-}
-[data-bs-theme=minty] .form-select:focus {
-  border-color: #bce1d6;
-  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
 }
 [data-bs-theme=minty] .btn-primary {
   --bs-btn-color: #fff;
