@@ -75,7 +75,7 @@
   --bs-body-color: #777;
   --bs-body-color-rgb: 119, 119, 119;
   --bs-body-bg: var(--bs-primary-bg-subtle);
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 218, 226, 235;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(119, 119, 119, 0.75);
@@ -247,7 +247,7 @@
   --bs-body-color: #444;
   --bs-body-color-rgb: 68, 68, 68;
   --bs-body-bg: var(--bs-primary-bg-subtle);
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 222, 214, 234;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(68, 68, 68, 0.75);
@@ -419,7 +419,7 @@
   --bs-body-color: #888;
   --bs-body-color-rgb: 136, 136, 136;
   --bs-body-bg: var(--bs-primary-bg-subtle);
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 228, 243, 239;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(136, 136, 136, 0.75);
