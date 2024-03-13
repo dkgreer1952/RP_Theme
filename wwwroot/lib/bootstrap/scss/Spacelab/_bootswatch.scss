@@ -27,16 +27,6 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
   }
 }
 
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include btn-shadow($value);
-  }
-
-  .btn-#{$color}:not(.disabled):hover {
-    @include btn-shadow(shade-color($value, 8%));
-  }
-}
-
 [class*="btn-outline-"] {
   text-shadow: none;
 }
