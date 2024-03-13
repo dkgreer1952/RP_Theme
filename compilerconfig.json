@@ -6,5 +6,9 @@
   {
     "outputFile": "wwwroot/lib/bootstrap/scss/bootstrap.css",
     "inputFile": "wwwroot/lib/bootstrap/scss/bootstrap.scss"
+  },
+  {
+    "outputFile": "wwwroot/lib/bootstrap/scss/Spacelab/bootstrap.css",
+    "inputFile": "wwwroot/lib/bootstrap/scss/Spacelab/spacelab.scss"
   }
 ]
