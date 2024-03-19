@@ -636,7 +636,7 @@
 [data-bs-theme]:not([data-bs-theme=dark]) {
     --bs-border-color: var(--bs-primary-border-subtle);
 
-    .form-check-input:checked, .form-check-input:focus {
+    .form-check-input:checked, .form-check-input:focus, .form-control:focus {
         border-color: var(--bs-primary-border-subtle);
     }
 
