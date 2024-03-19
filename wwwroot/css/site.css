@@ -609,7 +609,7 @@
   --bs-border-color: var(--bs-primary-border-subtle);
   /* Override default Bootstrap dropdown menu colors for non-dark themes */
 }
-[data-bs-theme]:not([data-bs-theme=dark]) .form-check-input:checked, [data-bs-theme]:not([data-bs-theme=dark]) .form-check-input:focus, [data-bs-theme]:not([data-bs-theme=dark]) .form-control:focus {
+[data-bs-theme]:not([data-bs-theme=dark]) .form-check-input:checked, [data-bs-theme]:not([data-bs-theme=dark]) .form-check-input:focus, [data-bs-theme]:not([data-bs-theme=dark]) .form-control:focus, [data-bs-theme]:not([data-bs-theme=dark]) .form-select:focus {
   border-color: var(--bs-primary-border-subtle);
 }
 [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-menu, [data-bs-theme]:not([data-bs-theme=dark]) .dropdown-item, [data-bs-theme]:not([data-bs-theme=dark]) button.dropdown-item {
