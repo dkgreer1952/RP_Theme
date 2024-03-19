@@ -7,7 +7,8 @@ function setTheme(theme) {
         case 'dark':
         case 'spacelab':
         case 'pulse':
-        case 'minty': document.documentElement.setAttribute('data-bs-theme', theme); break;
+        case 'minty':
+        case 'simplex':  document.documentElement.setAttribute('data-bs-theme', theme); break;
         default:
     }
 };
@@ -19,7 +20,8 @@ function saveTheme(theme) {
         case 'dark':
         case 'spacelab':
         case 'pulse':
-        case 'minty': localStorage.setItem('Theme', theme); break;
+        case 'minty':
+        case 'simplex': localStorage.setItem('Theme', theme); break;
         case 'system': localStorage.removeItem('Theme'); break;
         default:
     }
